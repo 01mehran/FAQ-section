@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>FAQ accordion </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--  Start the main Section -->
+    <section class="container">
+        <!-- start two baground -->
+        <section class="wallppr-container">
+            <img src="assets/images/background-pattern-desktop.svg" class="purple-bg" width="100%" alt="purple_bg">
+            <div class="bag"></div>
+            <div class="white-bg"></div>
+        </section>
+        <!-- End two baground  -->
+        <!-- Start box-Question -->
+        <section class="box-question_container">
+            <div class="box-question">
+                <div class="box-question_child">
+                    <div class="starstand-pot">
+                        <img src="assets/images/icon-star.svg" width="30px" alt="star-mark">
+                        <h1>FAQs</h1>
+                    </div>
+                    <div id="listed">
+                        <div class="First-question twochange">
+                            <p>What is Frontend Mentor, and how will it help me?</p>
+                            <img src="assets/images/icon-minus.svg" onclick="firstQuestion()" id="picture-1"
+                                width="25px" alt="minus-sign">
+                        </div>
+                        <span class="answers" id="first-answer">Frontend Mentor offers realistic coding challenges
+                            to
+                            help developers improve their
+                            frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
+                            all levels and ideal for
+                            portfolio building.
+                        </span>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="second-question twochange">
+                            <p>Is Frontend Mentor free?</p>
+                            <img src="assets/images/icon-plus.svg" id="picture-2" onclick="secondquestion()"
+                                width="25px" alt="mathes-sign">
+                        </div>
+                        <span class="answers hidden" id="second-answer"> Yes, Frontend Mentor offers both free and
+                            premium coding challenges, with
+                            the free
+                            option providing access to a range of projects suitable for all skill levels.
+                        </span>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="third-quesiton twochange">
+                            <p>Can I use Frontend Mentor projects in my portfolio?</p>
+                            <img src="assets/images/icon-plus.svg" id="picture-3" width="25px" alt="mathes-sign">
+                        </div>
+                        <span class="answers hidden" id="third-answer">
+                            Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+                            way to showcase your skills to potential employers!
+                        </span>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="fourth-question twochange">
+                            <p>How can I get help if I'm stuck on a challenge?</p>
+                            <img src="assets/images/icon-plus.svg" width="25px" onclick="lastquestion()" id="picture-4"
+                                alt="mathes-sign">
+                        </div>
+                        <span class="answers hidden" id="fourth-answer"> The best place to get help is inside Frontend
+                            Mentor's Discord community. There's a help
+                            channel where you can ask questions and seek support from other community members.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- End box Question -->
+    </section>
+    <!-- End the main Section -->
+    <script src="script.js"></script>
+</body>
+
+</html>
